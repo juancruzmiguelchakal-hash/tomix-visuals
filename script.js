@@ -1,13 +1,13 @@
 /* ============================================
-   PORTFOLIO 2025 - JavaScript
+   PORTFOLIO 2026 - JavaScript
    ============================================ */
 
 // ===== CONFIGURATION =====
 const CONFIG = {
     // Datos de contacto
-    whatsappNumber: '5491130489378', // cruxio WhatsApp
+    whatsappNumber: '5491161376839', // cruxio WhatsApp
     calendlyUrl: 'https://calendly.com/juancruzmiguelchakal/presentacion-de-ideas',
-    email: 'peladoslabs@gmail.com',
+    email: 'tomixvisuals@gmail.com',
 
     // Precios base para calculadora (en ARS )
     prices: {
@@ -1144,9 +1144,14 @@ function initThemeToggle() {
     const sunIcon = 'fa-sun';
 
     function updateLogos(isDark) {
-        const logos = document.querySelectorAll('img[alt="cruxio Logo"]');
+        // Seleccionamos los logos tanto del menú de navegación como del footer
+        const logos = document.querySelectorAll('.nav-logo-img, .footer-logo-img');
+        
         logos.forEach(logo => {
-            logo.src = isDark ? '/assets/images/logonegativo.png' : '/assets/images/logopositivo.png';
+            // ATENCIÓN: Reemplaza estas rutas con los nombres exactos de tus archivos
+            logo.src = isDark 
+                ? '/assets/images/logo_tomix_visuals.png' // Imagen para el modo oscuro (letras claras)
+                : '/assets/images/logo_tomix_visuals_negro.png';       // Imagen para el modo claro (letras oscuras)
         });
     }
 
