@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaría 3D Circular | Tomix Visuals</title>
+    <title>Galería de Trabajos | Tomix Visuals</title>
+    <meta name="description" content="Explora nuestro portfolio de diseño, branding, maquetado web y redes sociales.">
+    
     <link rel="icon" type="image/png" href="./assets/images/logo_tomix_visuals.png">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Navigation (Keeping for Project Consistency) -->
+    
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="/assets/images/logo_tomix_visuals.png" alt="Tomix Visuals Logo" class="nav-logo-img" style="height: 70px; margin-right: 10px;">
+                <img src="/assets/images/logo_tomix_visuals.png" alt="Tomix Visuals Logo" class="nav-logo-img"
+                    style="height: 70px; margin-right: 10px;">
             </a>
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Inicio</a>
@@ -28,119 +32,210 @@
                     </a>
                 </div>
             </div>
-
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
         </div>
     </nav>
 
-    <!-- Main 3D Gallery Section -->
-    <main class="circular-gallery-main">
-        <section class="circular-gallery-section" id="gallery-trigger">
-            <div class="gallery-sticky-container">
-                <div class="gallery-title-layer">
-                    <h1>Nuestro Trabajo</h1>
-                    <p>Scroll para rotar la galería 3D</p>
-                </div>
-
-                <div class="gallery-scene">
-                    <div class="gallery-pivot" id="gallery-pivot">
-                        <!-- 18 Cards -->
-                        <div class="gallery-card" data-title="Modern Architecture"
-                            data-desc="A stunning view of glass and steel in urban design.">
-                            <div class="gallery-card-inner"><img src="img/foto1.jpg" alt="Portfolio 1"></div>
-                        </div>
-                        <div class="gallery-card" data-title="Mountain Retreat"
-                            data-desc="Finding peace and silence in the snowy peaks.">
-                            <div class="gallery-card-inner"><img src="img/foto2.jpg" alt="Portfolio 2"></div>
-                        </div>
-                        <div class="gallery-card" data-title="Neon Nights"
-                            data-desc="The vibrant pulse of the city after sunset.">
-                            <div class="gallery-card-inner"><img src="img/foto3.jpg" alt="Portfolio 3"></div>
-                        </div>
-                        <div class="gallery-card" data-title="Minimalist Interior"
-                            data-desc="Beauty in simplicity and clean lines.">
-                            <div class="gallery-card-inner"><img src="img/foto4.jpg" alt="Portfolio 4"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto5.jpg" alt="Portfolio 5"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto6.jpg" alt="Portfolio 6"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto7.jpg" alt="Portfolio 7"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto8.jpg" alt="Portfolio 8"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto9.jpg" alt="Portfolio 9"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto10.jpg" alt="Portfolio 10"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto11.jpg" alt="Portfolio 11"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto12.jpg" alt="Portfolio 12"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto13.jpg" alt="Portfolio 13"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto14.jpg" alt="Portfolio 14"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto15.jpg" alt="Portfolio 15"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto16.jpg" alt="Portfolio 16"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto17.jpg" alt="Portfolio 17"></div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-card-inner"><img src="img/foto18.jpg" alt="Portfolio 18"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="scroll-instruction">
-                    <div class="mouse"></div>
-                    <span>Scroll</span>
-                </div>
+    <section class="hero" style="min-height: 40vh; padding-bottom: 0;">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fa-solid fa-images"></i>
+                <span>Nuestros Trabajos</span>
             </div>
-        </section>
-    </main>
+            <h1 class="hero-title">Explora nuestra <span>Galería</span></h1>
+            <p class="hero-subtitle">Una selección de nuestros mejores proyectos visuales, web y de branding.</p>
+        </div>
+    </section>
 
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
-        <i class="fa-solid fa-moon"></i>
-    </button>
+    <section id="galeria-grid" style="padding-top: var(--space-lg);">
+        <div class="container container-lg">
+            
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">Todos</button>
+                <button class="filter-btn" onclick="filterGallery('desarrollo', this)">Desarrollo Web</button>
+                <button class="filter-btn" onclick="filterGallery('maquetado', this)">Maquetado Web</button>
+                <button class="filter-btn" onclick="filterGallery('redes', this)">Redes Sociales</button>
+                <button class="filter-btn" onclick="filterGallery('branding', this)">Branding</button>
+            </div>
 
-    <!-- Gallery Detail Modal -->
+            <div class="modern-gallery" id="masonry-gallery">
+                
+                <div class="gallery-item" data-category="branding" data-aos="fade-up" onclick="openGalleryModal(this)">
+                    <img src="./assets/images/foto1.jpg" alt="Logo Design">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Branding</span>
+                        <h3 class="gallery-item-title">Identidad Visual "Alpha"</h3>
+                    </div>
+                    <div class="hidden-data" data-desc="Creación de logotipo, paleta de colores y manual de marca completo para una startup tecnológica." data-type="image"></div>
+                </div>
+
+                <div class="gallery-item" data-category="maquetado" data-aos="fade-up" onclick="openGalleryModal(this)">
+                    <img src="./assets/images/foto2.jpg" alt="Web Design">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Maquetado Web</span>
+                        <h3 class="gallery-item-title">VisionCraft UI</h3>
+                    </div>
+                    <div class="hidden-data" data-desc="Maquetado frontend utilizando HTML5, CSS3 y animaciones personalizadas en JavaScript." data-type="image"></div>
+                </div>
+
+                <div class="gallery-item" data-category="redes" data-aos="fade-up" onclick="openGalleryModal(this)">
+                    <img src="./assets/images/foto3.jpg" alt="Social Media">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Redes Sociales</span>
+                        <h3 class="gallery-item-title">Campaña Instagram Reels</h3>
+                        <i class="fa-solid fa-play" style="color: white; font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.8;"></i>
+                    </div>
+                    <div class="hidden-data" data-desc="Edición dinámica de video y diseño de portadas para campaña publicitaria en Instagram." data-type="video" data-video="./assets/videos/ejemplo_reel.mp4"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <div class="gallery-modal" id="gallery-modal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modal-close">&times;</button>
+            <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-body">
-                <div class="modal-image-container">
-                    <img src="" alt="" id="modal-img">
-                </div>
+                
+                <div class="modal-image-container" id="media-container" style="display: flex; align-items: center; justify-content: center; background: #000;">
+                    </div>
+                
                 <div class="modal-info">
-                    <h2 id="modal-title">Project Title</h2>
-                    <p id="modal-desc">Detailed description of the project goes here. Explaining the creative process
-                        and results.</p>
+                    <h2 id="modal-title">Título</h2>
+                    <p id="modal-desc">Descripción detallada del proyecto.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">
+                        <img src="/assets/images/logo_tomix_visuals.png" alt="Tomix Visuals Logo" class="footer-logo-img"
+                            style="height: 60px; margin-right: 10px;">
+                        <span class="logo negativo">Tomix Visuals</span>
+                    </div>
+                    <p class="footer-brand-text">Desarrollo web profesional orientado a resultados.</p>
+                    <div class="footer-social" style="margin-top: var(--space-lg);">
+                        <a href="#" target="_blank" class="footer-social-link"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/5491161376839" target="_blank" class="footer-social-link"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title-negativo">Navegación</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Inicio</a>
+                        <a href="about.html" class="footer-link">Nosotros</a>
+                        <a href="servicios.html" class="footer-link">Servicios</a>
+                        <a href="contacto.html" class="footer-link">Contacto</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title-negativo">Recursos</h4>
+                    <div class="footer-links">
+                        <a href="galeria.html" class="footer-link">Galería</a>
+                        <a href="faq.html" class="footer-link">Preguntas Frecuentes</a>
+                        <a href="testimonios.html" class="footer-link">Testimonios</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title-negativo">Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:tomixvisuals@gmail.com" class="footer-link"><i
+                                class="fa-regular fa-envelope"></i> tomixvisuals@gmail.com</a>
+                        <a href="https://wa.me/5491161376839" class="footer-link"><i class="fa-brands fa-whatsapp"></i>
+                            +54 9 11 6137 6839</a>
+                        <span class="footer-link" style="cursor: default;"><i class="fa-solid fa-globe"></i> Argentina
+                            (GMT-3)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Tomix Visuals. Todos los derechos reservados.</p>
+                <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+            </div>
+        </div>
+    </footer>
 
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar modo oscuro/claro">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="script.js"></script>
+    
+    <script>
+        // Función para filtrar la galería
+        function filterGallery(category, btnElement) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-buttons .filter-btn');
+
+            // Quitar clase active a todos los botones
+            buttons.forEach(btn => btn.classList.remove('active'));
+            // Agregar al presionado
+            btnElement.classList.add('active');
+
+            items.forEach(item => {
+                item.style.display = 'none'; // Ocultar
+                // Pequeño timeout para reiniciar animación
+                setTimeout(() => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.5s ease forwards';
+                    }
+                }, 50);
+            });
+        }
+
+        // Funciones del Modal (Lightbox Mejorado para soportar Video e Imagen)
+        const modal = document.getElementById('gallery-modal');
+        const mediaContainer = document.getElementById('media-container');
+
+        function openGalleryModal(element) {
+            const imgSrc = element.querySelector('img').src;
+            const title = element.querySelector('.gallery-item-title').innerText;
+            const hiddenData = element.querySelector('.hidden-data');
+            const desc = hiddenData.getAttribute('data-desc');
+            const type = hiddenData.getAttribute('data-type'); // 'image' o 'video'
+
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+
+            // Limpiar el contenedor
+            mediaContainer.innerHTML = '';
+
+            if (type === 'video') {
+                const videoSrc = hiddenData.getAttribute('data-video');
+                // Si es video, creamos el reproductor
+                mediaContainer.innerHTML = `
+                    <video controls autoplay style="width: 100%; max-height: 80vh; border-radius: 12px 0 0 12px;">
+                        <source src="${videoSrc}" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                `;
+            } else {
+                // Si es imagen, creamos la etiqueta img
+                mediaContainer.innerHTML = `<img src="${imgSrc}" alt="${title}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px 0 0 12px;">`;
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGalleryModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            // Limpiamos el contenedor para que el video deje de reproducirse de fondo
+            setTimeout(() => { mediaContainer.innerHTML = ''; }, 300); 
+        }
+
+        document.getElementById('modal-close').addEventListener('click', closeGalleryModal);
+        document.querySelector('.modal-overlay').addEventListener('click', closeGalleryModal);
+    </script>
+</body>
 </html>
