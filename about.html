@@ -8,6 +8,7 @@
     <meta name="description" content="Conocé al equipo de cruxio, nuestra misión, valores y proyectos destacados.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="./assets/images/logo_tomix_visuals.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,7 +22,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="/assets/images/logo_tomix_visuals.png" alt= "Tomix Visuals Logo" class="nav-logo-img"
+                <img src="/assets/images/logo_tomix_visuals_negro.png" alt= "Tomix Visuals Logo" class="nav-logo-img"
                     style="height: 70px; margin-right: 10px;">
             </a>
             <div class="nav-menu">
@@ -177,9 +178,7 @@
                     <img src="./assets/images/FOTO_PERFIL.jpg" alt="Foto perfil" class="avatar">
                     <h3 style="color: #e6e6e6;">Hidalgo Maximo</h3>
                     <p class="role">Director de Operaciones</p>
-                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ab ducimus
-                        dicta, quis facilis cum exercitationem quibusdam saepe mollitia corrupti! Natus explicabo
-                        earum, repudiandae eos exercitationem enim eius praesentium nemo?</p>
+                    <p class="bio">Me especializo en coordinar proyectos tecnológicos, asegurando eficiencia y calidad. Mi objetivo es optimizar procesos, testear funcionalidades y garantizar que cada producto digital cumpla con los más altos estándares.</p>
                     <div class="skills">
                         <span class="skill">Desarrollador</span>
                         <span class="skill">Gestor de proyectos</span>
@@ -187,9 +186,8 @@
                     </div>
                     <div class="redes-sociales">
                         <a href="https://github.com/MaximoH04" class="red-social"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/m%C3%A1ximo-hidalgo-983b97238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        <a href="https://www.linkedin.com/in/maximohidalgoo/"
                             class="red-social"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -240,6 +238,10 @@
                 <div class="tech-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
                 <div class="tech-item"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
                 <div class="tech-item"><i class="fa-solid fa-tasks"></i><span>Asana/Trello</span></div>
+                <div class="tech-item"><i class="fa-solid fa-film"></i><span>Premiere Pro</span></div>
+                <div class="tech-item"><i class="fa-solid fa-image"></i><span>Photoshop</span></div>
+                <div class="tech-item"><i class="fa-solid fa-bezier-curve"></i><span>Illustrator</span></div>
+                <div class="tech-item"><i class="fa-solid fa-wand-magic-sparkles"></i><span>After Effects</span></div>
             </div>
         </div>
     </section>
@@ -274,75 +276,31 @@
                 <p class="hero-subtitle">Webs, diseño, edición y más</p>
             </div>
 
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" onclick="filterProjects('all', this)">Todos</button>
+                <button class="filter-btn" onclick="filterProjects('desarrollo', this)">Desarrollo Web</button>
+                <button class="filter-btn" onclick="filterProjects('maquetado', this)">Maquetado Web</button>
+                <button class="filter-btn" onclick="filterProjects('redes', this)">Redes Sociales</button>
+                <button class="filter-btn" onclick="filterProjects('branding', this)">Branding</button>
+            </div>
+
             <div class="grid grid-3 project-grid" style="margin-top: var(--space-xl);">
-                <!-- VertexVisual (Agency) -->
-                <div class="card project-card" data-category="web" data-aos="fade-up">
-                    <div class="project-image">
-                        <i class="fa-solid fa-code"></i>
+                
+                <div class="card project-card" data-category="branding" data-aos="fade-up">
                     </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Agency</span>
-                            <span class="tag">Web</span>
-                            <span class="tag">Branding</span>
-                        </div>
-                        <h3 class="card-title">cruxio Agency</h3>
-                        <p class="card-text">Nuestra propia plataforma. Diseño moderno, colores premium y optimización
-                            total.</p>
-                        <a href="index.html" target="_blank" class="btn btn-outline btn-sm" style="width: 100%;">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Sitio
-                        </a>
-                    </div>
-                </div>
 
-                <!-- VisionCraft -->
-                <div class="card project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <i class="fa-solid fa-eye"></i>
+                <div class="card project-card" data-category="maquetado" data-aos="fade-up" data-aos-delay="100">
                     </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Web</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <h3 class="card-title">VisionCraft</h3>
-                        <p class="card-text">Portfolio visual con animaciones suaves y diseño premium orientado a
-                            servicios creativos.</p>
-                        <a href="https://juancruzmiguelchakal-hash.github.io/VisionCraftAI/" target="_blank"
-                            class="btn btn-outline btn-sm" style="width: 100%;">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Proyecto
-                        </a>
-                    </div>
-                </div>
 
-                <!-- KuchaBicho -->
-                <div class="card project-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
-                    <div class="project-image">
-                        <i class="fa-solid fa-bug"></i>
+                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" data-aos-delay="150">
                     </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Web</span>
-                            <span class="tag">Formularios</span>
-                            <span class="tag">Precios</span>
-                        </div>
-                        <h3 class="card-title">KuchaBicho</h3>
-                        <p class="card-text">Web para control de plagas con tabla de precios dinámica y formularios
-                            integrados.</p>
-                        <a href="https://kucha-bicho-final.vercel.app/" target="_blank" class="btn btn-outline btn-sm"
-                            style="width: 100%;">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Proyecto
-                        </a>
-                    </div>
-                </div>
+            </div>
 
                 <!-- Gallery CTA Card -->
                 <a href="galeria.html" class="card project-card gallery-cta-card" data-aos="fade-up"
                     data-aos-delay="200" style="text-decoration: none; display: flex; flex-direction: column;">
-                    <div class="project-image"
-                        style="background: var(--accent-gradient); color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        <i class="fa-solid fa-images"></i>
+                    <div class="project-image">
+                        <img src="./assets/images/foto1.jpg" alt="Proyecto VisionCraft">
                     </div>
                     <div class="project-content"
                         style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
@@ -396,15 +354,15 @@
                     <div class="footer-links">
                         <a href="mailto:tomixvisuals@gmail.com" class="footer-link"><i
                                 class="fa-regular fa-envelope"></i> tomixvisuals@gmail.com</a>
-                        <a href="https://wa.me/5491130489378" class="footer-link"><i class="fa-brands fa-whatsapp"></i>
-                            +54 9 11 3048 9378</a>
+                        <a href="https://wa.me/5491161376839" class="footer-link"><i class="fa-brands fa-whatsapp"></i>
+                            +54 9 11 6137 6839</a>
                         <span class="footer-link" style="cursor: default;"><i class="fa-solid fa-globe"></i> Argentina
                             (GMT-3)</span>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 Tomix Visuals. Todos los derechos reservados.</p>
+                <p class="footer-copyright">&copy; 2026 Tomix Visuals. Todos los derechos reservados.</p>
                 <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
             </div>
         </div>
@@ -417,23 +375,31 @@
     <script src="script.js"></script>
     <script>
         function filterProjects(category, btnElement) {
-            const projects = document.querySelectorAll('.project-card');
-            const buttons = document.querySelectorAll('.filter-buttons .btn');
+        const projects = document.querySelectorAll('.project-card');
+        
+        // CORRECCIÓN: Ahora busca la clase .filter-btn en lugar de .btn
+        const buttons = document.querySelectorAll('.filter-buttons .filter-btn');
 
-            // Update button styles
-            buttons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-            btnElement.classList.add('active');
+        // Quitamos la clase 'active' de todos los botones para que se apaguen
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Se la agregamos solo al botón que acabas de presionar
+        btnElement.classList.add('active');
 
-            // Filter projects
-            projects.forEach(project => {
-                project.style.display = 'none'; // Hide all first
+        // Lógica para mostrar/ocultar los proyectos
+        projects.forEach(project => {
+            project.style.display = 'none'; // Ocultar todos primero
+            
+            // Un pequeño retraso para que la transición no sea brusca
+            setTimeout(() => {
                 if (category === 'all' || project.dataset.category === category) {
-                    project.style.display = 'block'; // Then show the correct ones
+                    project.style.display = 'block';
                 }
-            });
-        }
+            }, 50);
+        });
+    }
     </script>
 </body>
 

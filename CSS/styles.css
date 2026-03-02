@@ -2720,19 +2720,13 @@ body.no-cursor .txt-type::after {
 
 /* Redefinición de variables para Modo Oscuro */
 body.dark-mode {
-    --bg-primary: #0b0b0b;
-    /* Slate 900 */
-    --bg-secondary: #52675f;
-    /* Slate 800 */
+    --bg-primary: #0b0b0b; 
+    --bg-secondary: #182526; /* Cambiado a un tono más oscuro y elegante */
     --bg-tertiary: #2e3d37;
-    /* Slate 700 */
 
-    --text-primary: #e6e6e8;
-    /* Slate 100 */
-    --text-secondary: #e6e6e8;
-    /* Slate 300 */
+    --text-primary: #e6e6e8; 
+    --text-secondary: #b0b0a9; /* Mejor contraste */
     --text-muted: #52675f;
-    /* Slate 400 */
 
     --border: #2c3e3a;
     --border-light: #52675f;
@@ -2968,17 +2962,32 @@ body.dark-mode .theme-toggle-btn i {
 
 /* Contenedor Grid para las tarjetas (Reemplaza al flex container anterior) */
 .team-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    display: grid;
+    /* Por defecto en celulares (pantallas pequeñas): 1 sola columna */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
     padding: 20px 0;
     justify-items: center;
-    /* Centrar tarjetas */
+}
+
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para Computadoras (pantallas grandes): 4 columnas alineadas */
+@media (min-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; /* Reducimos un poco el gap en PC para que las 4 entren cómodamente */
+    }
 }
 
 /* LA TARJETA PRINCIPAL */
 .perfil-tarjeta {
-  width: 280px; 
+  width: 100%; /* CORRECCIÓN: Para que sea responsivo */
+  max-width: 320px; /* Evita que la tarjeta se haga gigante en pantallas grandes */
   background: #182526;
   border-radius: 12px;
   overflow: hidden;
@@ -2987,7 +2996,6 @@ body.dark-mode .theme-toggle-btn i {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 .perfil-tarjeta:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(110, 69, 224, 0.2);
@@ -3460,6 +3468,163 @@ body.dark-mode .gallery-card-inner::after {
     font-size: 1.1rem;
     line-height: 1.7;
     color: var(--text-secondary);
+}
+
+/* ============================================
+   FILTROS DE PROYECTOS (PORTFOLIO TABS)
+   ============================================ */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.filter-btn {
+    padding: var(--space-sm) var(--space-lg);
+    background: transparent;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 4px 15px rgba(0, 137, 123, 0.4);
+}
+
+/* Transición suave al filtrar */
+.project-card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* ============================================
+   MODERN MASONRY GALLERY (REDISEÑO GALERÍA)
+   ============================================ */
+.modern-gallery {
+    columns: 3 300px; /* Crea columnas estilo Pinterest */
+    column-gap: var(--space-md);
+    padding: var(--space-md) 0 var(--space-4xl) 0;
+}
+
+.gallery-item {
+    break-inside: avoid; /* Evita que la imagen se corte entre columnas */
+    margin-bottom: var(--space-md);
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gallery-item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-xl);
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover {
+    box-shadow: var(--shadow-lg);
+    z-index: 2;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.gallery-item-category {
+    color: var(--accent);
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease 0.1s;
+}
+
+.gallery-item-title {
+    color: #ffffff;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    line-height: 1.2;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-item-category,
+.gallery-item:hover .gallery-item-title {
+    transform: translateY(0);
+}
+
+/* Modal Mejorado para imágenes */
+#gallery-modal .modal-image-container img {
+    border-radius: 12px 0 0 12px;
+}
+
+
+/* Agregamos el alto aproximado del navbar (90px) al padding superior para empujarlo hacia abajo */
+.hero {
+    padding-top: calc(var(--space-4xl) + 90px) !important; 
+}
+
+/* Ajustes para Tablets */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: calc(var(--space-3xl) + 80px) !important;
+    }
+}
+
+/* Ajustes para Celulares */
+@media (max-width: 480px) {
+    /* Forzamos el padding en celulares porque la etiqueta 'section' lo reducía demasiado */
+    section.hero {
+        padding-top: calc(var(--space-2xl) + 90px) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .modern-gallery {
+        columns: 2 150px;
+    }
+    .gallery-item-overlay {
+        padding: var(--space-md);
+    }
+    .gallery-item-title {
+        font-size: var(--font-size-base);
+    }
 }
 
 @media (max-width: 768px) {
