@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     initThemeToggle();
     initExpandingCards();
     handleInitialScroll();
+    initProjectFilters();
 
     // Re-check theme for dynamic logos on shared components
     const savedTheme = localStorage.getItem('theme');
