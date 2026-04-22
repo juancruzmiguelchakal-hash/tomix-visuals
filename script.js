@@ -1177,6 +1177,8 @@ function initThemeToggle() {
 
     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         enableDarkMode();
+    } else {
+        disableDarkMode();
     }
 
     toggleBtn.addEventListener('click', () => {
