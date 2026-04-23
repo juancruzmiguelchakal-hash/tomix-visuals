@@ -58,36 +58,125 @@
                 <button class="filter-btn" onclick="filterGallery('branding', this)">Branding</button>
             </div>
 
-            <div class="modern-gallery" id="masonry-gallery">
-                
-                <div class="gallery-item" data-category="branding" data-aos="fade-up" onclick="openGalleryModal(this)">
-                    <img src="./assets/images/foto1.jpg" alt="Logo Design">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-category">Branding</span>
-                        <h3 class="gallery-item-title">Identidad Visual "Alpha"</h3>
+            <div class="grid grid-3 project-grid" style="margin-top: var(--space-xl);">
+                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" onclick="window.open('https://nimatsolutions.com.ar/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image"><img src="./assets/images/nimat.jpg" alt="Nimat Solutions"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Institucional</span></div>
+                        <h3 class="card-title">Nimat Solutions</h3>
+                        <p class="card-text">Desarrollo de sitio web corporativo profesional.</p>
                     </div>
-                    <div class="hidden-data" data-desc="Creación de logotipo, paleta de colores y manual de marca completo para una startup tecnológica." data-type="image"></div>
                 </div>
 
-                <div class="gallery-item" data-category="maquetado" data-aos="fade-up" onclick="openGalleryModal(this)">
-                    <img src="./assets/images/foto2.jpg" alt="Web Design">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-category">Maquetado Web</span>
-                        <h3 class="gallery-item-title">VisionCraft UI</h3>
+                <div class="card project-card" data-category="desarrollo" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/lepapillon.jpg" alt="Le Papillon"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Negocios</span></div>
+                        <h3 class="card-title">Le Papillon Peluquerías</h3>
+                        <p class="card-text">Diseño y desarrollo web para salón de estética y peluquería.</p>
+                        <a href="https://lepapillonpeluquerias.com/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
                     </div>
-                    <div class="hidden-data" data-desc="Maquetado frontend utilizando HTML5, CSS3 y animaciones personalizadas en JavaScript." data-type="image"></div>
                 </div>
 
-                <div class="gallery-item" data-category="redes" data-aos="fade-up" onclick="openGalleryModal(this)">
-                    <img src="./assets/images/foto3.jpg" alt="Social Media">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-category">Redes Sociales</span>
-                        <h3 class="gallery-item-title">Campaña Instagram Reels</h3>
-                        <i class="fa-solid fa-play" style="color: white; font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.8;"></i>
+                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" >
+                    <div class="project-image"><img src="./assets/images/saray.jpg" alt="Saray Page"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Landing Page</span></div>
+                        <h3 class="card-title">Saray Portfolio</h3>
+                        <p class="card-text">Landing page moderna y optimizada desarrollada con React/Vercel.</p>
+                        <a href="https://my-saray-page.vercel.app/index.html" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
                     </div>
-                    <div class="hidden-data" data-desc="Edición dinámica de video y diseño de portadas para campaña publicitaria en Instagram." data-type="video" data-video="./assets/videos/ejemplo_reel.mp4"></div>
                 </div>
 
+                <div class="card project-card" data-category="desarrollo" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/portfolio-tomas.jpg" alt="Portfolio Tomas Beron"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Portfolio</span></div>
+                        <h3 class="card-title">Portfolio Personal</h3>
+                        <p class="card-text">Desarrollo de portfolio web para exhibición de proyectos creativos.</p>
+                        <a href="https://portfolio-tomas-beron.vercel.app/index.html" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="maquetado" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/compragamer.jpg" alt="Compra Gamer"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">Rediseño</span></div>
+                        <h3 class="card-title">Compra Gamer Rediseño</h3>
+                        <p class="card-text">Rediseño integral de interfaz para mejorar la experiencia de e-commerce.</p>
+                        <a href="https://www.behance.net/gallery/208064535/Rediseno-Web-de-Compra-Gamer-UXUI-Avanzado" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="maquetado" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/shell.jpg" alt="Shell Prototipo"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">E-commerce</span></div>
+                        <h3 class="card-title">App de Pedidos Shell</h3>
+                        <p class="card-text">Diseño de interfaz para sistema de catálogo y carrito de compras.</p>
+                        <a href="https://www.figma.com/proto/0pwKmETfHP14PLpURjkWHn/Tomix-Visuals-Shells" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-figma"></i> Ver Figma</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="maquetado" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/coderhouse.jpg" alt="CoderHouse UXUI"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">Mobile</span></div>
+                        <h3 class="card-title">Proyecto CoderHouse</h3>
+                        <p class="card-text">Diseño de experiencia de usuario e interfaces móviles.</p>
+                        <a href="https://www.behance.net/gallery/226254557/Beron-Tomas-Nahuel-Diseno-UX-UI-CoderHouse-DK" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="branding" data-aos="fade-up">
+                        <div class="project-image"><img src="./assets/images/altoque.jpg" alt="Al Toque Branding"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Branding</span><span class="tag">App Móvil</span></div>
+                        <h3 class="card-title">Al Toque App</h3>
+                        <p class="card-text">Identidad visual completa y conceptualización gráfica para aplicación móvil.</p>
+                        <a href="https://www.behance.net/gallery/243734045/Al-Toque-Branding-Identidad-visual" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="branding" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/tomix-branding.jpg" alt="Tomix Branding"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Branding</span><span class="tag">Agencia</span></div>
+                        <h3 class="card-title">Tomix Visuals Branding</h3>
+                        <p class="card-text">Creación de identidad corporativa, paleta de colores y manual de marca.</p>
+                        <a href="https://www.behance.net/gallery/189916915/Branding-Emprendimiento-Tomix-Visuals" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="redes" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/mirvarshell-ig.jpg" alt="Mirvar Shell IG"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
+                        <h3 class="card-title">Mirvar Shell</h3>
+                        <p class="card-text">Diseño de piezas gráficas y contenido visual para el feed de Instagram.</p>
+                        <a href="https://www.instagram.com/mirvarshell/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="redes" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/altoque-ig.jpg" alt="Al Toque IG"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
+                        <h3 class="card-title">Al Toque App</h3>
+                        <p class="card-text">Creación de contenido gráfico promocional y comunicacional para redes.</p>
+                        <a href="https://www.instagram.com/al_toqueapp/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="redes" data-aos="fade-up">
+                    <div class="project-image"><img src="./assets/images/kcrew-ig.jpg" alt="Kcrew High IG"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
+                        <h3 class="card-title">Kcrew High</h3>
+                        <p class="card-text">Diseño de posteos adaptados a la estética e identidad visual de la marca.</p>
+                        <a href="https://www.instagram.com/kcrewhigh/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,24 +261,36 @@
     <script>
         // Función para filtrar la galería
         function filterGallery(category, btnElement) {
-            const items = document.querySelectorAll('.gallery-item');
+            const projects = document.querySelectorAll('.project-card');
             const buttons = document.querySelectorAll('.filter-buttons .filter-btn');
 
-            // Quitar clase active a todos los botones
+            // Quitamos la clase 'active' de todos los botones y se la ponemos al clickeado
             buttons.forEach(btn => btn.classList.remove('active'));
-            // Agregar al presionado
             btnElement.classList.add('active');
 
-            items.forEach(item => {
-                item.style.display = 'none'; // Ocultar
-                // Pequeño timeout para reiniciar animación
-                setTimeout(() => {
-                    if (category === 'all' || item.dataset.category === category) {
-                        item.style.display = 'block';
-                        item.style.animation = 'fadeInUp 0.5s ease forwards';
-                    }
-                }, 50);
+            // Lógica para mostrar/ocultar
+            projects.forEach(project => {
+                // Removemos la animación
+                project.classList.remove('aos-animate');
+
+                if (category === 'all' || project.dataset.category === category) {
+                    project.style.display = ''; 
+                    
+                    // Retraso mínimo para que la animación fluya
+                    setTimeout(() => {
+                        project.classList.add('aos-animate');
+                    }, 50);
+                } else {
+                    project.style.display = 'none';
+                }
             });
+
+            // Recalculamos posiciones de AOS
+            setTimeout(() => {
+                if (typeof AOS !== 'undefined') {
+                    AOS.refresh();
+                }
+            }, 100);
         }
 
         // Funciones del Modal (Lightbox Mejorado para soportar Video e Imagen)
