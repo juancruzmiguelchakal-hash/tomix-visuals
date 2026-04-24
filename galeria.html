@@ -52,117 +52,27 @@
             
             <div class="filter-buttons" data-aos="fade-up">
                 <button class="filter-btn active" onclick="filterGallery('all', this)">Todos</button>
-                <button class="filter-btn" onclick="filterGallery('desarrollo', this)">Desarrollo Web</button>
-                <button class="filter-btn" onclick="filterGallery('maquetado', this)">Maquetado Web</button>
+                <button class="filter-btn" onclick="filterGallery('Reels', this)">Reels</button>
+                <button class="filter-btn" onclick="filterGallery('publicaciones', this)">Publicaciones</button>
                 <button class="filter-btn" onclick="filterGallery('redes', this)">Redes Sociales</button>
                 <button class="filter-btn" onclick="filterGallery('branding', this)">Branding</button>
             </div>
 
-            <div class="grid grid-3 project-grid" style="margin-top: var(--space-xl);">
-                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" onclick="window.open('https://nimatsolutions.com.ar/', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/nimat.jpg" alt="Nimat Solutions"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Institucional</span></div>
-                        <h3 class="card-title">Nimat Solutions</h3>
-                        <p class="card-text">Desarrollo de sitio web corporativo profesional.</p>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" onclick="window.open('https://lepapillonpeluquerias.com/', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/lepapillon.jpg" alt="Le Papillon"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Negocios</span></div>
-                        <h3 class="card-title">Le Papillon Peluquerías</h3>
-                        <p class="card-text">Diseño y desarrollo web para salón de estética y peluquería.</p>
-                        <a href="https://lepapillonpeluquerias.com/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" onclick="window.open('https://my-saray-page.vercel.app/index.html', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/saray.jpg" alt="Saray Page"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Landing Page</span></div>
-                        <h3 class="card-title">Saray Portfolio</h3>
-                        <p class="card-text">Landing page moderna y optimizada desarrollada con React/Vercel.</p>
-                        <a href="https://my-saray-page.vercel.app/index.html" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="desarrollo" data-aos="fade-up" onclick="window.open('https://portfolio-tomas-beron.vercel.app/index.html', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/portfolio-tomas.jpg" alt="Portfolio Tomas Beron"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Web</span><span class="tag">Portfolio</span></div>
-                        <h3 class="card-title">Portfolio Personal</h3>
-                        <p class="card-text">Desarrollo de portfolio web para exhibición de proyectos creativos.</p>
-                        <a href="https://portfolio-tomas-beron.vercel.app/index.html" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Web</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="maquetado" data-aos="fade-up" onclick="window.open('https://www.behance.net/gallery/208064535/Rediseno-Web-de-Compra-Gamer-UXUI-Avanzado', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/compragamer.jpg" alt="Compra Gamer"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">Rediseño</span></div>
-                        <h3 class="card-title">Compra Gamer Rediseño</h3>
-                        <p class="card-text">Rediseño integral de interfaz para mejorar la experiencia de e-commerce.</p>
-                        <a href="https://www.behance.net/gallery/208064535/Rediseno-Web-de-Compra-Gamer-UXUI-Avanzado" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="maquetado" data-aos="fade-up" onclick="window.open('https://www.figma.com/proto/0pwKmETfHP14PLpURjkWHn/Tomix-Visuals-Shells?node-id=229-123&t=Gnm1k8uQILptB0yu-1&scaling=scale-down-width&content-scaling=fixed&page-id=19%3A299', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/shell.jpg" alt="Shell Prototipo"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">E-commerce</span></div>
-                        <h3 class="card-title">App de Pedidos Shell</h3>
-                        <p class="card-text">Diseño de interfaz para sistema de catálogo y carrito de compras.</p>
-                        <a href="https://www.figma.com/proto/0pwKmETfHP14PLpURjkWHn/Tomix-Visuals-Shells" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-figma"></i> Ver Figma</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="maquetado" data-aos="fade-up" onclick="window.open('https://www.behance.net/gallery/226254557/Beron-Tomas-Nahuel-Diseno-UX-UI-CoderHouse-DK', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/coderhouse.jpg" alt="CoderHouse UXUI"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">UX/UI</span><span class="tag">Mobile</span></div>
-                        <h3 class="card-title">Proyecto CoderHouse</h3>
-                        <p class="card-text">Diseño de experiencia de usuario e interfaces móviles.</p>
-                        <a href="https://www.behance.net/gallery/226254557/Beron-Tomas-Nahuel-Diseno-UX-UI-CoderHouse-DK" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="branding" data-aos="fade-up" onclick="window.open('https://www.behance.net/gallery/243734045/Al-Toque-Branding-Identidad-visual', '_blank')" style="cursor: pointer;">
-                        <div class="project-image"><img src="./assets/images/altoque.jpg" alt="Al Toque Branding"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Branding</span><span class="tag">App Móvil</span></div>
-                        <h3 class="card-title">Al Toque App</h3>
-                        <p class="card-text">Identidad visual completa y conceptualización gráfica para aplicación móvil.</p>
-                        <a href="https://www.behance.net/gallery/243734045/Al-Toque-Branding-Identidad-visual" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
-                    </div>
-                </div>
-
-                <div class="card project-card" data-category="branding" data-aos="fade-up" onclick="window.open('https://www.behance.net/gallery/189916915/Branding-Emprendimiento-Tomix-Visuals', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/tomix-branding.jpg" alt="Tomix Branding"></div>
-                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-tags"><span class="tag">Branding</span><span class="tag">Agencia</span></div>
-                        <h3 class="card-title">Tomix Visuals Branding</h3>
-                        <p class="card-text">Creación de identidad corporativa, paleta de colores y manual de marca.</p>
-                        <a href="https://www.behance.net/gallery/189916915/Branding-Emprendimiento-Tomix-Visuals" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-behance"></i> Ver Behance</a>
-                    </div>
-                </div>
-
                 <div class="card project-card" data-category="redes" data-aos="fade-up" onclick="window.open('https://www.instagram.com/mirvarshell/', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/mirvarshell-ig.jpg" alt="Mirvar Shell IG"></div>
+                    <div class="project-image"><img src="./assets/images/shell.jpg" alt="Mirvar Shell IG"></div>
                     <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
                         <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
-                        <h3 class="card-title">Mirvar Shell</h3>
-                        <p class="card-text">Diseño de piezas gráficas y contenido visual para el feed de Instagram.</p>
+                        <h3 class="card-title">Mirvar Shell Red Social</h3>
+                        <p class="card-text">Diseño de piezas gráficas y contenido visual para el feed de Instagram, TikTok y Facebook.</p>
                         <a href="https://www.instagram.com/mirvarshell/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
                     </div>
                 </div>
 
                 <div class="card project-card" data-category="redes" data-aos="fade-up" onclick="window.open('https://www.instagram.com/al_toqueapp/', '_blank')" style="cursor: pointer;">
-                    <div class="project-image"><img src="./assets/images/altoque-ig.jpg" alt="Al Toque IG"></div>
+                    <div class="project-image"><img src="./assets/images/altoque.jpg" alt="Al Toque IG"></div>
                     <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
                         <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
-                        <h3 class="card-title">Al Toque App</h3>
+                        <h3 class="card-title">AlToque Red Social</h3>
                         <p class="card-text">Creación de contenido gráfico promocional y comunicacional para redes.</p>
                         <a href="https://www.instagram.com/al_toqueapp/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
                     </div>
@@ -172,9 +82,49 @@
                     <div class="project-image"><img src="./assets/images/kcrew-ig.jpg" alt="Kcrew High IG"></div>
                     <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
                         <div class="project-tags"><span class="tag">Diseño</span><span class="tag">Posts</span></div>
-                        <h3 class="card-title">Kcrew High</h3>
+                        <h3 class="card-title">Kcrew High Red Social</h3>
                         <p class="card-text">Diseño de posteos adaptados a la estética e identidad visual de la marca.</p>
                         <a href="https://www.instagram.com/kcrewhigh/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Instagram</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="Reels" data-aos="fade-up" onclick="window.open('https://www.instagram.com/reels/CqVPOjvAgev/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image"><img src="./assets/images/foto-tomas-fondo.jpg" alt="LePapillon Reel"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Reels</span><span class="tag">Instagram</span></div>
+                        <h3 class="card-title">Diferencias del Coloreado en Adobe Lightroom</h3>
+                        <p class="card-text">Reel sobre diferencias del coloreado.</p>
+                        <a href="https://www.instagram.com/reels/CqVPOjvAgev/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Reel</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="Reels" data-aos="fade-up" onclick="window.open('https://www.instagram.com/reels/DS84gfijMIP/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image"><img src="./assets/images/foto-tomas-fondo.jpg" alt="LePapillon Reel"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Reels</span><span class="tag">Instagram</span></div>
+                        <h3 class="card-title">Despedida de Año</h3>
+                        <p class="card-text">Reel promocional para la despedida de año.</p>
+                        <a href="https://www.instagram.com/reels/DS84gfijMIP/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Reel</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="Reels" data-aos="fade-up" onclick="window.open('https://www.instagram.com/reels/CiDX7oogux0/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image"><img src="./assets/images/lepapillon.jpg" alt="LePapillon Reel"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Reels</span><span class="tag">Instagram</span></div>
+                        <h3 class="card-title">LePapillon Primer Aniversario</h3>
+                        <p class="card-text">Reel promocional para Le Papillon Peluquerías.</p>
+                        <a href="https://www.instagram.com/reels/CiDX7oogux0/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Reel</a>
+                    </div>
+                </div>
+
+                <div class="card project-card" data-category="Reels" data-aos="fade-up" onclick="window.open('https://www.instagram.com/reels/CmWhgltAn03/', '_blank')" style="cursor: pointer;">
+                    <div class="project-image"><img src="./assets/images/lepapillon.jpg" alt="LePapillon Reel"></div>
+                    <div class="project-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-tags"><span class="tag">Reels</span><span class="tag">Instagram</span></div>
+                        <h3 class="card-title">LePapillon Campaña Verano Natural Life</h3>
+                        <p class="card-text">Reel promocional para Le Papillon Peluquerías.</p>
+                        <a href="https://www.instagram.com/reels/CmWhgltAn03/" target="_blank" class="btn btn-outline btn-sm" style="margin-top: auto;"><i class="fa-brands fa-instagram"></i> Ver Reel</a>
                     </div>
                 </div>
             </div>
