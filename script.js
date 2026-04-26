@@ -676,8 +676,10 @@ function initTiltEffect() {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
 
-            const rotateX = (y - centerY) / 25; // Aumentamos el divisor para un efecto más sutil
-            const rotateY = (centerX - x) / 25;
+            const divisor = element.classList.contains('gallery-cta-card') ? 75 : 25;
+
+            const rotateX = (y - centerY) / divisor; // Aumentamos el divisor para un efecto más sutil
+            const rotateY = (centerX - x) / divisor;
 
             element.style.transition = 'transform 0.1s ease-out';
             element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
